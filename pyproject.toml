@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "boojooh"
+version = "0.1.0"
+description = "BOOJOOH is a platform designed specifically for LINE users, making it easy for you to find partners to enjoy the best deals together. Whether it’s buy-one-get-one-free offers or group discounts, BOOJOOH helps you quickly match with like-minded friends, so you never have to shop alone and can enjoy more discounts and fun!"
+authors = ["RexBearIU <rexbear87941@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pre-commit = "^3.8.0"
+pytest = "^8.3.2"
+fastapi = {extras = ["all"], version = "^0.112.1"}
+rpa = "^1.50.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
