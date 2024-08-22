@@ -1,0 +1,58 @@
+name: "🚀 Feature Request"
+description: Plan daily feature development tasks.
+title: "[FEATURE] - <title>"
+labels:
+  - enhancement
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "Provide a brief summary and detailed description of the feature development task."
+      placeholder: "Enter a brief summary and description of the task..."
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "Tasks"
+      description: "List the specific tasks to be completed."
+      placeholder: |
+        - [ ] Task 1...
+        - [ ] Task 2...
+        - [ ] Task 3...
+    validations:
+      required: true
+  - type: dropdown
+    id: dependencies
+    attributes:
+      label: "Dependencies"
+      description: "Select any dependencies for this task."
+      multiple: true
+      options:
+        - API Availability
+        - Design Mockups
+        - Backend Support
+        - Frontend Framework
+        - Database Schema
+        - Third-party Services
+        - Other
+    validations:
+      required: false
+  - type: input
+    id: other-dependencies
+    attributes:
+      label: "Other Dependencies"
+      description: "Please specify other dependencies if you selected 'Other'."
+      placeholder: "Enter other dependencies..."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: "Additional Notes"
+      description: "Add any other context or notes about the feature development task."
+      render: markdown
+      placeholder: "Enter any additional notes..."
+    validations:
+      required: false
