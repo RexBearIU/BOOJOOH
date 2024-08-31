@@ -11,14 +11,28 @@ BOOJOOH is a platform designed specifically for LINE users, making it easy for y
 ## Quick start
 
 1. Clone the project
-2. Activating the virtual environment
-3. Install dependencies
-4. Run the project
 
 ```bash
 git clone https://github.com/RexBearIU/BOOJOOH.git
+```
+
+2. Activating the virtual environment
+
+```bash
 cd BOOJOOH
 poetry shell
+```
+
+3. Install dependencies
+
+```bash
 poetry install
 pre-commit install # for git pre-commit hook
+```
+
+4. Run the project
+
+```bash
+# Run the project
+uvicorn app.main:app --reload
 ```
