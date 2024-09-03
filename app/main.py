@@ -43,7 +43,7 @@ line_bot_api = AsyncMessagingApi(async_api_client)
 parser = WebhookParser(channel_secret = setting.LINE_CHANNEL_SECRET)
 
 @app.get("/")
-async def root():
+def root():
     return {"message": "Welcome to BOOJOOH's LINE Bot!"}
 
 @app.post("/callback")
