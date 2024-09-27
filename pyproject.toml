@@ -10,14 +10,17 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pre-commit = "^3.8.0"
-pytest = "^8.3.2"
 fastapi = {extras = ["all"], version = "^0.112.1"}
 rpa = "^1.50.0"
 line-bot-sdk = "^3.12.0"
 python-dotenv = "^1.0.1"
 pydantic = "^2.8.2"
+tagui = "^1.50.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pre-commit = "^3.8.0"
 
 [build-system]
 requires = ["poetry-core"]
